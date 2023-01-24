@@ -24,3 +24,10 @@ service_id = ""
 
 [scripts]
   build = "cargo build --bin fastly-compute-project --release --target wasm32-wasi --color always"
+
+[setup]
+
+  [setup.object_stores]
+
+    [setup.object_stores.my-store]
+      description = "My first object store"
